@@ -46,7 +46,9 @@ $(document).ready(
         var html = template(context);
         // stampo nell'htm nell'elemento con id list
         $('#list').append(html)
+        $(this).val('');
       }
+
     }
     );
     var button = $('button').click(
@@ -61,10 +63,11 @@ $(document).ready(
           }
           var html = template(context);
           $('#list').append(html)
+          $('input').val('');
         }
       }
     );
-    console.log(button);
+
 
     // prendo come riferimento il documet ed al click dell'elemento
     $(document).on('click','.delete',
