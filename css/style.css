@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin-left: 8px;
+}
+
+h3 {
+  margin-top: 10px;
+}
+input {
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+button {
+  height: 30px;
+  background-color: lime;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  margin: 5px;
+}
+ul span.delete {
+  display: inline-block;
+  color: red;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: orange;
+
+}

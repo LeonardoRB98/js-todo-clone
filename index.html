@@ -2,13 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js" integrity="sha512-MQkEjxbZvzs4TX8ES4/tTIyaYdtDlJzVocnPo0GoysTR0jCmNg0P2is7uqpCoWxmoS9X84CDVzuWgZD/R/Q2oQ==" crossorigin="anonymous"></script>
     <script src="js/script.js" charset="utf-8"></script>
     <title></title>
   </head>
   <body>
+    <h1>Todo List</h1>
+    <h3>inserisci una nuova nota</h3>
     <input type="text" name="add-to-list" value="" placeholder="inserisci una nuova nota">
+    <button type="button" name="button">Aggiungi</button>
     <ul id="list"></ul>
     <script id="entry-template" type="text/x-handlebars-template">
     <li>{{todo}}. <span class="delete">X</span></li>

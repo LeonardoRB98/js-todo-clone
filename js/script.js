@@ -49,6 +49,23 @@ $(document).ready(
       }
     }
     );
+    var button = $('button').click(
+      function() {
+        if ($('input').val() == '') {
+          alert('inserisci del testo')
+        } else {
+          var newItem = $('[name = "add-to-list"]').val();
+          var context =
+          {
+            todo: newItem
+          }
+          var html = template(context);
+          $('#list').append(html)
+        }
+      }
+    );
+    console.log(button);
+
     // prendo come riferimento il documet ed al click dell'elemento
     $(document).on('click','.delete',
     function() {
