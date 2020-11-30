@@ -8,9 +8,10 @@
     <title></title>
   </head>
   <body>
+    <input type="text" name="add-to-list" value="" placeholder="inserisci una nuova nota">
     <ul id="list"></ul>
     <script id="entry-template" type="text/x-handlebars-template">
-    <li>{{todo}}. <span>X</span></li>
+    <li>{{todo}}. <span class="delete">X</span></li>
     </script>
   </body>
 </html>
